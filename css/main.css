@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face{
+    font-family: montserrat;
+    src: url('../fonts/MontserratAlternates-Regular.otf')
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+html{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    font-family: montserrat;
+}
+
+.home-bg{
+    background-image: url('../images/bg.jpg');
+}
+
+.semaforo-bg{
+    background-image: url('../images/wall_semaforo.jpeg');
+}
+
+.semaforo-bg #rodape h1{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1em;
+    color: #000000;
+}
+
+.estufa-bg{
+    background-image: url('../images/wall_estufa.jpeg');
+}
+
+.estufa-bg #rodape h1{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1em;
+    color: #000000;
+}
+
+#conteudo{
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    padding: 2em;
+    position: relative;
+    min-height: 100%;
+    z-index: 2;
+    
+}
+
+#conteudo > *{
+z-index: 1;
+}
+
+#conteudo:before{
+content: '';
+display: block;
+}
+
+#main{
+position: relative;
+max-width: 100%;
+min-width: 27em;
+padding: 4.5em 3em 3em 3em ;
+background: #ffffff;
+border-radius: 1em;
+cursor: default;
+opacity: 0.95;
+text-align: center;
+-moz-transform-origin: 50% 50%;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+-moz-transform: rotateX(0deg);
+-webkit-transform: rotateX(0deg);
+-ms-transform: rotateX(0deg);
+transform: rotateX(0deg);
+-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+transition: opacity 1s ease, transform 1s ease;
+}
+
+#main .avatar{
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+#main .avatar>* {
+    display: block;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0 0 0 1.5em #ffffff;
+    width: 8em;
+    background-color: #ffffff;
+}
+
+
+#main .avatar:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -3em;
+    width: calc(100% + 6em);
+    height: 1px;
+    z-index: -1;
+    background: #c8cccf;
+}
+
+#main p{
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+}
+
+ul.icons li>*{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    line-height: 3.75em;
+    text-align: center;
+    text-indent: 3.75em;
+    white-space: nowrap;
+    margin: 0.5em;
+}
+
+.icone1{
+    width: 5em;
+    height: 10em;
+}
+
+.icone2{
+    width: 10em;
+    height: 10em;
+}
+
+#rodape{
+    -moz-align-self: -moz-flex-end;
+    -webkit-align-self: -webkit-flex-end;
+    -ms-align-self: -ms-flex-end;
+    align-self: flex-end;
+    width: 100%;
+    padding: 1.5em 0 0 0;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: default;
+    text-align: center;
+}
+
+#select_sem{
+    font-family: montserrat;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    padding-left: 1em;
+}

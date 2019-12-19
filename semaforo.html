@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="semaforo-bg">
+    <head>
+        <meta charset="utf-8">
+        <title>Semáforo</title>
+        <script src="js/semaforo.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/main.css">
+    </head>
+     <body>
+         <div id="conteudo">
+            <section id="main">
+                <header>
+                    <span class="avatar"><h1>Semáforo</h1></span>
+                    <form name="ruas">
+                        Há carros na rua A?
+                        <select name="s1" id="select_sem">
+                            <option value ="sim">Sim</ option >
+                            <option value ="nao">Não</ option >
+                        </select>
+                        <br>
+                        Há carros na rua B?
+                        <select name="s2" id="select_sem">
+                            <option value ="sim">Sim</ option >
+                            <option value ="nao">Não</ option >
+                        </select>
+                        <br><br>
+                        <input type="button" value="Confirmar" onclick="semaforo()" id="select_sem">
+                     </form>
+                </header>
+                <footer>
+                    <ul class="icons">
+                        <li>A<img src="images/semaforo_01.png" class="icone1" id="ra"></li>
+                        <li>B<img src="images/semaforo_01.png" class="icone1" id="rb"></li>
+                    </ul>
+                    <div id="resultado">Clique em confirmar</div>
+                </footer>                    
+            </section>
+            <footer id="rodape">
+                <h1>Luan Gabriel Mantuani || 1ºBCC</h1>
+            </footer>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="estufa-bg">
+    <head>
+        <meta charset="utf-8">
+        <title>Estufa</title>
+        <script src="js/estufa.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/main.css">
+        <link type="text/css"  rel="stylesheet" href="css/range_slider.css">
+    </head>
+     <body onload="">
+         <div id="conteudo">
+            <section id="main">
+                <header>
+                    <span class="avatar"><h1>Estufa</h1></span>
+                    <form name="estufa">
+                        Sensor 1: <input type="range" min="10" max="25" value="17" id="s1" oninput="temperatura()"><span id="temps1"> 17°</span>
+                        </br>
+                        Sensor 2: <input type="range" min="10" max="25" value="17" id="s2" oninput="temperatura()"><span id="temps2"> 17°</span>
+                    </form>
+                </header>
+                <footer>
+                    <ul class="icons">
+                        <li>Aquecedor<img src="images/heater_off.png" class="icone2" id="aq"><div id="resultado_aq">OFF</div></li>
+                        <li>Resfriador<img src="images/cooler_off.png" class="icone2" id="re"><div id="resultado_re">OFF</div></li>
+                    </ul>
+                    <div id="resultado">Temperatura ambiente</div>
+                </footer>                    
+            </section>
+            <footer id="rodape">
+                <h1>Luan Gabriel Mantuani || 1ºBCC</h1>
+            </footer>
+         </div>
+    </body>
+</html>
